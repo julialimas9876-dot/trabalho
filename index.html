@@ -1,3 +1,191 @@
-<html>
-  <title>Teste</title>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Globalização 🌎</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Poppins:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background:
+      radial-gradient(circle at 20% 20%, #003b75, transparent 40%),
+      radial-gradient(circle at 80% 80%, #6900a8, transparent 40%),
+      linear-gradient(135deg, #020014, #08082b, #16002c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image:
+      radial-gradient(white 1px, transparent 1px);
+    background-size: 45px 45px;
+    opacity: .25;
+    animation: estrelas 15s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes estrelas {
+    from { transform: translateY(0); }
+    to { transform: translateY(45px); }
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    max-width: 950px;
+    padding: 55px 25px;
+    border: 2px solid #00f7ff;
+    border-radius: 35px;
+    background: rgba(5, 5, 35, .82);
+    box-shadow:
+      0 0 20px #00f7ff,
+      0 0 60px #8a00ff,
+      inset 0 0 35px rgba(0,247,255,.15);
+    animation: aparecer 1.2s ease;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: scale(.7); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.tag {
+    color: #00f7ff;
+    letter-spacing: 5px;
+    font-family: Orbitron, sans-serif;
+    font-size: 13px;
+    text-shadow: 0 0 15px #00f7ff;
+}
+
+h1 {
+    font-family: Orbitron, sans-serif;
+    font-size: clamp(35px, 7vw, 75px);
+    font-weight: 900;
+    margin: 25px 0;
+    background: linear-gradient(90deg, #00f7ff, #fff, #ff00e6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0 0 15px #00eaff);
+}
+
+.globo {
+    font-size: 100px;
+    display: inline-block;
+    animation: girar 8s linear infinite, flutuar 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 25px #00f7ff);
+}
+
+@keyframes girar {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes flutuar {
+    50% { translate: 0 -15px; }
+}
+
+p {
+    font-size: 17px;
+    color: #d8d8ff;
+    line-height: 1.8;
+    margin: 20px auto;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 22px 40px;
+    border-radius: 60px;
+    text-decoration: none;
+    color: #08001b;
+    font-size: 18px;
+    font-weight: 900;
+    background: linear-gradient(90deg, #00f7ff, #ff00e6, #00f7ff);
+    background-size: 200%;
+    box-shadow: 0 0 20px #00f7ff, 0 0 50px #ff00e6;
+    transition: .3s;
+    animation: brilho 3s linear infinite;
+}
+
+@keyframes brilho {
+    to { background-position: 200%; }
+}
+
+.botao:hover {
+    transform: scale(1.12);
+    box-shadow: 0 0 35px #fff, 0 0 80px #00f7ff;
+}
+
+.rodape {
+    margin-top: 40px;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #8e8eaf;
+}
+
+.destaque {
+    color: #ff00e6;
+    text-shadow: 0 0 12px #ff00e6;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="tag">✦ CONHECIMENTO SEM FRONTEIRAS ✦</div>
+
+    <div class="globo">🌎</div>
+
+    <h1>GLOBALIZAÇÃO</h1>
+
+    <p>
+        🌱 <span class="destaque">IMPACTOS AMBIENTAIS</span> 🌍
+    </p>
+
+    <p>
+        Uma viagem pelo mundo conectado, seus avanços,
+        transformações e consequências para o nosso planeta.
+    </p>
+
+    <p>
+        ⚡ Prepare-se para acessar uma apresentação
+        extraordinária! ⚡
+    </p>
+
+    <a class="botao"
+       href="https://julialimas9876-dot.github.io/trabalho/Globaliza%C3%A7%C3%A3o%20e%20Impactos%20Ambientais.pptx"
+       target="_blank"
+       rel="noopener noreferrer">
+       🚀 ACESSAR APRESENTAÇÃO 🚀
+    </a>
+
+    <div class="rodape">
+        🌐 CONECTANDO IDEIAS • TRANSFORMANDO O FUTURO 🌐
+    </div>
+
+</div>
+
+</body>
 </html>
